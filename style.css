@@ -3,7 +3,11 @@
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #333;
+  height: 78px;
 }
 
 h1 {
@@ -15,10 +19,14 @@ h1 {
 
 nav {
   float: right;
-  padding: 10px 20px;
+  height: 78px;
 }
 
 a {
+  display: inline-block;
+  text-align: center;
+  height: 78px;
+  line-height: 78px;
   padding: 0 20px;
   color: #fff;
   text-decoration: none;
@@ -29,13 +37,37 @@ a:hover {
 }
 
 img {
+  margin-top: 78px;
   width: 100%;
+  object-fit: cover;
 }
 
 footer {
-  padding-top: 30px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   color: white;
+  height: 78px;
   text-align: center;
-  height: 100px;
+  line-height: 78px;
   background-color: #333;
+}
+.forma {
+  width: 33vw;
+  margin: 260px auto;
+}
+input {
+  width: 33vw;
+  margin-bottom: 20px;
+}
+.button {
+  height: 35px;
+  border: none;
+  width: 200px;
+  color: aliceblue;
+  background-color: #333;
+}
+.button:hover {
+  color: rgb(255, 0, 234);
+  background-color: rgb(62, 228, 250);
 }
