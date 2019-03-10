@@ -90,6 +90,9 @@ function checkReservation (id){
                 dvorane[i].reservation.isReserved = false;
                 dvorane[i].reservation.reservedFrom = null;
                 dvorane[i].reservation.reservedUntill = null;
+                console.log("No reservations");
+            } else {
+                console.log("Hall reserved");
             }
         } 
     }
