@@ -65,3 +65,12 @@ function remove(id) {
         } 
     }
 }
+
+function reservation(id, reservedFrom, reservedUntill) {
+    for (let i in dvorane) {
+        if (dvorane[i].id == id){
+            dvorane[i].reservation.reservedFrom = reservedFrom;
+            dvorane[i].reservation.reservedUntill = reservedUntill;
+        } 
+    }
+}
