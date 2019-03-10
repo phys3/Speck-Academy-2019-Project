@@ -4,41 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Registracija</title>
 </head>
 <body>
     <header>
-        <h1>Rezervacija dvorana</h1>
+        <h1>Registracija</h1>
         <nav>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="#">O nama</a>
           <a href="register.html">Registracija</a>
+          <a href="hall.html">Hall</a>
         </nav>
       </header>
-  
-  <form action="index.html" method="post">
-    <label for="username">Korisničko ime</label>
+  <form action="index.html" method="post" class="forma">
+    <label for="username">Korisničko ime:</label><br>
     <input id="username" name="username" type="text" required>
     <br>
 
-    <label for="password">Lozinka</label>
+    <label for="password">Lozinka:</label><br>
     <input id="password" name="password" type="password" required>
     <br>
 
-    <label for="firstName">Ime</label>
+    <label for="firstName">Ime:</label><br>
     <input id="firstName" name="firstName" type="text">
     <br>
 
-    <label for="lastName">Prezime</label>
+    <label for="lastName">Prezime:</label><br>
     <input id="lastName" name="lastName" type="text">
     <br>
   
-    <input type="submit">
+    <input type="submit" class="button">
   </form>
-
   <footer>
       <h4>Grad Križevci</h4>
     </footer>
-  
+  <script src="scripts.js"></script>
 </body>
 </html>
