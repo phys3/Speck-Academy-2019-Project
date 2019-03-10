@@ -85,8 +85,11 @@ function reservation(id, reservedFrom, reservedUntill) { //reservedFrom and rese
 function checkReservation (id){
     for (let i in dvorane) {
         if (dvorane[i].id == id){
-            var timeNow = new Date.now();
-            if (dvorane[i].reservation.reservedUntill.slice(-1)[0] <= timeNow)){
+            var timeNow = Date.now();
+            if (dvorane[i].reservation.reservedUntill == null){
+                console.log("No reservations");
+            }
+            else if (dvorane[i].reservation.reservedUntill.slice(-1)[0] <= timeNow){
                 dvorane[i].reservation.isReserved = false;
                 dvorane[i].reservation.reservedFrom = null;
                 dvorane[i].reservation.reservedUntill = null;
