@@ -66,11 +66,31 @@ function remove(id) {
     }
 }
 
-function reservation(id, reservedFrom, reservedUntill) {
+function reservation(id, reservedFrom, reservedUntill) { //reservedFrom and reservedUntill are strings
     for (let i in dvorane) {
         if (dvorane[i].id == id){
-            dvorane[i].reservation.reservedFrom = reservedFrom;
-            dvorane[i].reservation.reservedUntill = reservedUntill;
+            var from = new Date(reservedFrom);
+            var untill = new Date(reservedUntill);
+            if (dvorane[i].reservation.reservedFrom == null){
+                dvorane[i].reservation.reservedFrom = [];
+                dvorane[i].reservation.reservedUntill = [];
+            }
+            dvorane[i].reservation.reservedFrom.push(from);
+            dvorane[i].reservation.reservedUntill.push(untill);
+            dvorane[i].reservation.isReserved = true;
+        } 
+    }
+}
+
+function checkReservation (id){
+    for (let i in dvorane) {
+        if (dvorane[i].id == id){
+            var timeNow = new Date.now();
+            if (dvorane[i].reservation.reservedUntill.slice(-1)[0] <= timeNow)){
+                dvorane[i].reservation.isReserved = false;
+                dvorane[i].reservation.reservedFrom = null;
+                dvorane[i].reservation.reservedUntill = null;
+            }
         } 
     }
 }
