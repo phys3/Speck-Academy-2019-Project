@@ -111,4 +111,12 @@ h1 > a {
   h1 {
     display: block;
   }
+  .content {
+    margin-top: 200px;
+    flex-direction: column;
+    align-content: center;
+  }
+  .dvorana {
+    margin: 30px auto 10px auto;
+  }
 }
