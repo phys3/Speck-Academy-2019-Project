@@ -76,6 +76,32 @@ h1 > a {
   text-decoration: none;
   color: #fff;
 }
+.content {
+  margin: 120px 80px 110px 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dvorana__img {
+  margin-top: 0;
+  height: 160px;
+  width: 240px;
+  border: solid 3px #333;
+}
+.dvorana {
+  width: 240px;
+  height: 220px;
+  margin: 30px 25px 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.dvorana__title {
+  text-align: center;
+  width: 240px;
+  padding: 8px 0 8px 0;
+  border: solid 3px #333;
+}
 @media only screen and (max-width: 920px) {
   header {
     height: 156px;
