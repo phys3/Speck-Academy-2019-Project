@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/phys3/Speck-Academy-2019-Project/issues"
   },
-  "homepage": "https://github.com/phys3/Speck-Academy-2019-Project#readme"
+  "homepage": "https://github.com/phys3/Speck-Academy-2019-Project#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
