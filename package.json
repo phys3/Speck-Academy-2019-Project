@@ -1,0 +1,20 @@
+{
+  "name": "speck-academy-2019-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phys3/Speck-Academy-2019-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phys3/Speck-Academy-2019-Project/issues"
+  },
+  "homepage": "https://github.com/phys3/Speck-Academy-2019-Project#readme"
+}
