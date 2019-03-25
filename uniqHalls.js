@@ -1,8 +1,7 @@
-import dvorane from './halls.js';
+const dvorane = require('./halls.js');
 var http = require('http');
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World!');
-}).listen(8080);
-console.log(dvorane);
+    res.end(dvorane[0].name);
+}).listen(8080);;

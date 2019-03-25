@@ -1,4 +1,4 @@
-export const dvorane = [
+module.exports = [
     {
         id: 1,
         name: "dvo1",
