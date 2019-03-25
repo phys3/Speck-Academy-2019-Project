@@ -4,8 +4,8 @@ module.exports = [
         name: "dvo1",
         reservation: {
             isReserved: true,
-            reservedFrom: ["Thu Mar 21 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
-            reservedUntill: ["Thu Mar 22 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
+            reservedFrom: ["Thu Mar 21 2019 17:00:00"],
+            reservedUntill: ["Thu Mar 22 2019 17:00:00"],
         }
     },
     {
@@ -13,8 +13,8 @@ module.exports = [
         name: "dvo2",
         reservation: {
             isReserved: true,
-            reservedFrom: ["Thu Mar 21 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
-            reservedUntill: ["Thu Mar 23 2019 14:00:00 GMT+0100 (Central European Standard Time)"],
+            reservedFrom: ["Thu Mar 21 2019 17:00:00"],
+            reservedUntill: ["Thu Mar 23 2019 14:00:00"],
         }
     },
     {
@@ -49,8 +49,8 @@ module.exports = [
         name: "dvo3",
         reservation: {
             isReserved: true,
-            reservedFrom: ["Thu Mar 21 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
-            reservedUntill: ["Thu Mar 22 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
+            reservedFrom: ["Thu Mar 21 2019 17:00:00"],
+            reservedUntill: ["Thu Mar 22 2019 17:00:00"],
         }
     }
 ];

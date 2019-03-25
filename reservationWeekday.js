@@ -1,6 +1,16 @@
+const dvorane = require('./halls.js');
+const { DateTime } = require('./.gitignore/node_modules/luxon');
+let rezerviraneDvorane = [];
+for (let i in dvorane) {
+    if (dvorane[i].reservation.isReserved == true) {
+        rezerviraneDvorane.push(dvorane[i]);
+    }
+};
 var http = require('http');
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World!');
+    res.end(responseString);
 }).listen(8080);
+let responseString = DateTime.fromHTTP(rezerviraneDvorane[0].reservation.reservedUntill[0]).toFormat('cccc, LLLL yyyy');
+console.log(rezerviraneDvorane[0].reservation.reservedUntill[0])
