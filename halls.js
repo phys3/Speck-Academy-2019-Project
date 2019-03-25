@@ -1,4 +1,4 @@
-var dvorane = [
+export const dvorane = [
     {
         id: 1,
         name: "dvo1",
