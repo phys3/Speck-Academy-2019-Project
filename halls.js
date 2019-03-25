@@ -44,4 +44,13 @@ module.exports = [
             reservedUntill: null,
         }
     },
+    {
+        id: 6,
+        name: "dvo3",
+        reservation: {
+            isReserved: true,
+            reservedFrom: ["Thu Mar 21 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
+            reservedUntill: ["Thu Mar 22 2019 17:00:00 GMT+0100 (Central European Standard Time)"],
+        }
+    }
 ];
