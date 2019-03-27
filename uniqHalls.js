@@ -13,4 +13,3 @@ for (let i in dvorane) {
 }
 
 let uniqHallsArr = _.uniq(dvoraneNames);
-console.log(uniqHallsArr);
