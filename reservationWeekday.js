@@ -1,5 +1,5 @@
 const dvorane = require('./halls.js');
-const { DateTime } = require('./.gitignore/node_modules/luxon');
+const { DateTime } = require('.node_modules/luxon');
 let rezerviraneDvorane = [];
 for (let i in dvorane) {
     if (dvorane[i].reservation.isReserved == true) {
