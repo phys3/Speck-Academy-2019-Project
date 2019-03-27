@@ -1,5 +1,5 @@
 const dvorane = require('./halls.js');
-const { DateTime } = require('.node_modules/luxon');
+const { DateTime } = require('./node_modules/luxon');
 let rezerviraneDvorane = [];
 for (let i in dvorane) {
     if (dvorane[i].reservation.isReserved == true) {
@@ -12,5 +12,5 @@ http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end(responseString);
 }).listen(8080);
-let responseString = DateTime.fromHTTP(rezerviraneDvorane[0].reservation.reservedUntill[0]).toFormat('cccc, LLLL yyyy');
-console.log(rezerviraneDvorane[0].reservation.reservedUntill[0])
+let myTime = DateTime.fromFormat(rezerviraneDvorane[0].reservation.reservedUntill[0], 'LLL d yyyy H:mm:ss')
+let responseString = myTime.toFormat('cccc, LLLL d')
