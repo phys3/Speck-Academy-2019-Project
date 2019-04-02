@@ -6,6 +6,6 @@ const port = 3000
 
 app.use(express.static('public'))
 
-app.get('/halls', (req, res) => res.send(dvorane))
+app.get('/halls', (req, res) => res.json(dvorane))
 
 app.listen(port, () => console.log(`Listening on port ${port}!`))
