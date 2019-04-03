@@ -13,3 +13,4 @@ for (let i in dvorane) {
 }
 
 let uniqHallsArr = _.uniq(dvoraneNames);
+module.exports = uniqHallsArr;
