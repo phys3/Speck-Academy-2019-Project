@@ -25,6 +25,7 @@ app.use(express.urlencoded())
 app.use(express.static('public'))
 
 app.get('/halls', (req, res) => res.json(dvorane))
+<<<<<<< HEAD
 
 app.post('/hallsCreate', function(req, res) {
     const imeDvorane = req.body.name;
@@ -58,5 +59,7 @@ app.post('/hallsDelete', function(req, res) {
     remove(id);
     res.redirect('/index.html');
 })
+=======
+>>>>>>> f2a3bb9231cce12df8ee612ff02b71c4b60b9318
 
 app.listen(port, () => console.log(`Listening on port ${port}!`))
