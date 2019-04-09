@@ -1,6 +1,7 @@
 const dvorane = require('./halls.js');
 const express = require('express');
 const scripts = require('./scripts.js');
+const _ = require('./node_modules/lodash')
 const app = express()
 const port = 3000
 
@@ -8,7 +9,7 @@ app.use(express.urlencoded())
 
 app.use(express.static('public'))
 
-app.get('/halls', (req, res) => res.json(dvorane))
+app.get('/halls', (req, res) => res.json(_.uniq(dvorane)))
 
 app.post('/hallsCreate', function(req, res) {
     const imeDvorane = req.body.name;

@@ -9,6 +9,15 @@ module.exports = [
         }
     },
     {
+        id: 1,
+        name: "dvo1",
+        reservation: {
+            isReserved: true,
+            reservedFrom: ["Mar 21 2019 17:00:00"],
+            reservedUntill: ["Mar 22 2019 17:00:00"],
+        }
+    },
+    {
         id: 2,
         name: "dvo2",
         reservation: {
