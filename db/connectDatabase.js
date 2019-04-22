@@ -5,7 +5,6 @@ const pool = new Pool({
   host: '138.68.87.73',
   database: 'db_damjanco',
   password: 'R>2agKcM',
-  port: 3211,
 })
 
 pool.query('SELECT NOW()', (err, res) => {
@@ -18,7 +17,6 @@ const client = new Client({
     host: '138.68.87.73',
     database: 'db_damjanco',
     password: 'R>2agKcM',
-    port: 3211,
 })
 client.connect()
 
